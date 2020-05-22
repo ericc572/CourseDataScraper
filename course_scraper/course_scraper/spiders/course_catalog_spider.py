@@ -32,7 +32,7 @@ class Course_Catalog_Spider(scrapy.Spider):
         # If first pass, grab and store departments and their URL's
         if self.currentIndex == 0:
             departments = response.xpath('//div[@class="side-nav"]').xpath('//li[@class="parent opened child"]').css('ul')
-            listings = departments.css('li')[7].css('ul')
+            listings = departments.css('li')[8].css('ul')
             for d in listings:
                 self.depts.append(d.css('a::text').extract())
                 self.dept_urls.append(d.css('a::attr(href)').extract())

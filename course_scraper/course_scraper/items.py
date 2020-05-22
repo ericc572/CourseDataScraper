@@ -12,3 +12,12 @@ class CourseItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
     dept = scrapy.Field()
+
+class DegreeItem(scrapy.Item):
+    name = scrapy.Field()
+    degType = scrapy.Field()
+    date_updated = scrapy.Field()
+    dept = scrapy.Field()
+    courses = scrapy.Field()
+    groups = scrapy.Field()
+    total_units = scrapy.Field()
