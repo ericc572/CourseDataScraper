@@ -4,7 +4,7 @@
 - Convert pdf to txt: 
 `$  pdf2txt.py transfer_reports/another_assist.pdf >>
      transfer_reports/solano.txt`
-- Run my python script: `$ python pdf_reader.py transfer_reports/solano.txt`
+- Run my python script: `$ python pdf_reader.py transfer_reports/solano.txt OUTPUT_FILE.csv`
 
 ## Usage:
 - `cd course_scraper`
